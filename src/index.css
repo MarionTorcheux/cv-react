@@ -1,13 +1,194 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+header{
+  background-image: url("../public/bg.png") ;
+  background-size:cover;
+  height:50vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+h1{
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  animation: fadeIn 5s;
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h2{
+  font-family: 'Space Mono', monospace;
+  font-size:23px;
+  text-transform: uppercase;
+}
+
+h3{
+  font-size:15px;
+}
+
+h4{
+  color: #822e7e;
+}
+
+.content ul{
+  text-align: left;
+}
+
+em{
+  font-size:15px;
+}
+
+.content i{
+  font-size:20px;
+  color: #822e7e;
+  width:40px;
+  text-align: center;
+}
+
+.content a:hover{
+  color: #822e7e;
+}
+
+
+.main-content{
+  gap:30px;
+  margin-top:30px;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.presentation-cadre{
+
+  background-color:#292929;
+  border-radius: 5px;
+  color:white;
+  padding:15px;
+  gap:10px;
+
+}
+
+.bouton{
+  background-color: #822e7e;
+}
+
+aside p{
+  text-align: justify;
+}
+
+.social{
+  text-align: center;
+  font-size:40px;
+
+}
+
+.social a:hover{
+  color:#822e7e;
+}
+
+.content-center{
+  text-align: center;
+}
+
+.img-presentation{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left:25%;
+}
+
+
+
+.part{
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.16);
+  margin-bottom: 15px;
+  padding:10px;
+  border-radius: 15px;
+}
+
+
+
+/* ---------- Reponsive ------------ */
+
+
+/* ----- à partir de 767px (tablette portrait et plus grand) -----*/
+@media(min-width: 767px) {
+
+  header{
+
+    height:20vw;
+
+
+  }
+
+}
+
+/* -----  entre 768px et 991px (seulement tablette portrait)-----*/
+@media(min-width: 768px) and (max-width:991px) {
+
+
+
+
+}
+
+
+
+
+/* ----- à partir de 992px (desktop et plus grand) -----*/
+@media(min-width: 992px) {
+
+  header{
+    height:10vw;
+
+  }
+
+
+
+  .main-content{
+    flex-direction: row;
+
+  }
+
+  .presentation-cadre{
+
+    background-color:#292929;
+    border-radius: 5px;
+    color:white;
+    padding:15px;
+    width: 30%;
+    height:30%;
+    gap:10px;
+
+  }
+
+
+
+  .formation-part{
+    animation: fadeInRight 2s ease-in-out;
+  }
+
+  .xppro-part{
+    animation: fadeInRight 3s ease-in-out;
+  }
+
+  .hobbies-part{
+    animation: fadeInRight 4s ease-in-out;
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
 }
